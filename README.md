@@ -1,6 +1,6 @@
 # Kueo Clothing
 
-Pre-launch website for Kueo — a modern children's clothing brand.
+Pre-launch website for Kueo  a modern children's clothing brand.
 
 ## Tech Stack
 
@@ -9,21 +9,7 @@ Pre-launch website for Kueo — a modern children's clothing brand.
 - Vanilla HTML + CSS
 
 ## Project Structure
-kueo/
-├── server/
-│   ├── src/
-│   │   ├── env.js          # dotenv loader
-│   │   ├── supabase.js     # Supabase client
-│   │   └── index.js        # Express server
-│   ├── public/
-│   │   ├── index.html      # Landing page
-│   │   ├── styles.css      # Styles
-│   │   ├── success.html    # Waitlist confirmation
-│   │   ├── already-registered.html
-│   │   └── error.html
-│   ├── .env                # Local environment variables (never commit)
-│   └── package.json
-└── README.md
+
 ## Getting Started
 
 1. Clone the repository
