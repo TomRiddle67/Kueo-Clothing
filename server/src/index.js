@@ -42,7 +42,7 @@ app.post('/waitlist', async (req,res) =>{
         // email already registered
         if (error.code === "23505") {
             return res.sendFile(join(__dirname,
-                 "..public/already-registerd.html"));
+                 "../public/already-registered.html"));
         }
        
         return res.status(500)
