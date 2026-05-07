@@ -1,4 +1,3 @@
-/* Base reset */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -6,57 +5,78 @@
 }
 
 body {
-  font-family: 'Georgia', serif;
-  background-color: #faf9f7;
-  color: #1a1a1a;
+  font-family: 'Nunito', sans-serif;
+  background-color: #fdf6f9;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
-/* Main wrapper */
 .container {
-  max-width: 580px;
   width: 100%;
-  text-align: center;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 32px rgba(107, 141, 214, 0.12);
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+.back-link {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #6B8DD6;
+  text-decoration: none;
 }
 
-/* Brand header */
+.back-link:hover {
+  color: #E87EA1;
+}
+
+
 .brand-name {
-  font-size: 3.5rem;
-  font-weight: 400;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #1a1a1a;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #6B8DD6;
+  letter-spacing: 0.05em;
+}
+
+.brand-logo {
+  width: 160px;
+  height: auto;
 }
 
 .brand-tagline {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  color: #888;
-  letter-spacing: 0.1em;
+  margin-top: -1rem;
+  font-size: 0.95rem;
+  color: #E87EA1;
+  font-weight: 600;
 }
 
-/* Coming soon message */
+
 .message-heading {
   font-size: 1.5rem;
-  font-weight: 400;
-  color: #1a1a1a;
+  font-weight: 800;
+  color: #6B8DD6;
 }
 
 .message-body {
-  margin-top: 0.75rem;
+  margin-top: 0.6rem;
   font-size: 1rem;
-  color: #555;
+  color: #888;
   line-height: 1.7;
 }
 
-/* Waitlist form */
+
+.waitlist {
+  width: 100%;
+}
+
 .waitlist-form {
   display: flex;
   flex-direction: column;
@@ -65,49 +85,78 @@ body {
 
 .waitlist-input {
   width: 100%;
-  padding: 0.85rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 0.9rem 1rem;
+  border: 2px solid #f0d6e8;
+  border-radius: 50px;
   font-size: 1rem;
-  background-color: #fff;
+  font-family: 'Nunito', sans-serif;
   outline: none;
+  text-align: center;
+  color: #444;
   transition: border-color 0.2s;
 }
 
 .waitlist-input:focus {
-  border-color: #1a1a1a;
+  border-color: #6B8DD6;
 }
 
 .waitlist-button {
   width: 100%;
-  padding: 0.85rem;
-  background-color: #1a1a1a;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #6B8DD6, #E87EA1);
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 50px;
   font-size: 1rem;
-  letter-spacing: 0.05em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: opacity 0.2s, transform 0.1s;
 }
 
 .waitlist-button:hover {
-  background-color: #333;
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+.whatsapp-button {
+  display: inline-block;
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+  background-color: #f0faf3;
+  color: #25D366;
+  border: 2px solid #c8eed5;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s;
+  box-sizing: border-box;
 }
 
-/* Footer */
+.whatsapp-button:hover {
+  background-color: #e0f5e8;
+}
+
+
 .footer {
-  font-size: 0.8rem;
-  color: #bbb;
+  font-size: 0.78rem;
+  color: #ccc;
 }
 
 /* Mobile */
 @media (max-width: 480px) {
+  .container {
+    padding: 2rem 1.25rem;
+  }
+
   .brand-name {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
   }
 
   .message-heading {
     font-size: 1.25rem;
   }
 }
+
