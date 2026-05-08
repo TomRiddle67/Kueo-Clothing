@@ -88,6 +88,12 @@ app.post('/admin/login', (req, res) => {
 
 // Admin dashboard
 app.get('/admin', requireAdmin, async (req, res) => {
+  res.set({
+    'Cache-Control': 'no-store, no-cache, must-revalidate, private',
+    'Pragma': 'no-cache',
+    'Expires': '0'
+  });
+
   const { data, error } = await supabase
     .from('waitlist')
     .select('*')
@@ -125,6 +131,11 @@ app.get('/admin', requireAdmin, async (req, res) => {
 // Admin logout
 app.get('/admin/logout', (req, res) => {
   req.session.destroy();
+  res.set({
+    'Cache-Control': 'no-store, no-cache, must-revalidate, private',
+    'Pragma': 'no-cache',
+    'Expires': '0'
+  });
   res.redirect('/admin/login');
 });
 
