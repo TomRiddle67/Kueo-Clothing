@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kueo Admin — Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+    <main class="admin-container">
+
+        <header class="admin-header">
+            <img src="/logo.png" alt="Kueo Clothings" class="brand-logo" />
+            <a href="/admin/logout" class="logout-link">Sign out</a>
+        </header>
+
+        <section class="admin-section">
+            <h2 class="admin-heading">Waitlist Signups</h2>
+            <p class="admin-subheading">SIGNUP_COUNT people have joined the waitlist</p>
+
+            <div class="table-wrap">
+                <table class="waitlist-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Email</th>
+                            <th>Signed up</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        WAITLIST_ROWS
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
