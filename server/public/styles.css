@@ -160,3 +160,83 @@ body {
   }
 }
 
+/* Admin layout */
+.admin-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0d6e8;
+}
+
+.admin-heading {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #6B8DD6;
+}
+
+.admin-subheading {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.admin-section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(107, 141, 214, 0.1);
+}
+
+/* Table */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.waitlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.waitlist-table th {
+  text-align: left;
+  padding: 0.6rem 1rem;
+  background-color: #fdf6f9;
+  color: #E87EA1;
+  font-weight: 700;
+  border-bottom: 2px solid #f0d6e8;
+}
+
+.waitlist-table td {
+  padding: 0.75rem 1rem;
+  color: #444;
+  border-bottom: 1px solid #f5f0f3;
+}
+
+.waitlist-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Logout */
+.logout-link {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #E87EA1;
+  text-decoration: none;
+}
+
+.logout-link:hover {
+  color: #6B8DD6;
+}
+
