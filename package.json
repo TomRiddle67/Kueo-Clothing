@@ -1,0 +1,11 @@
+{
+  "name": "kueo-clothing",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd server && npm install",
+    "start": "cd server && npm start"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
